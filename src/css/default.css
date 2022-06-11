@@ -1,0 +1,118 @@
+html {
+  font-family: var(--font-family);
+  font-weight: 300;
+  color: var(--text-color);
+  /* line-height: var(--font-lineheight); */
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size:10px;
+  letter-spacing: 0.1em;
+  font-variant-numeric: tabular-nums; 
+  /* background: #F7F8F9; */
+  /* background: red; */
+}
+
+body,#__next {
+  margin:0;
+  min-width:100%;
+  min-height:100%;
+  width:100%;
+  height:100%;
+}
+
+input[readonly] {
+  cursor: default;
+}
+a {
+  text-decoration: none;
+}
+
+[data-placeholder]:empty:before{
+  content: attr(data-placeholder);
+  color: #888;
+}
+th{
+  white-space: nowrap;
+}
+
+body{
+  height:100%;
+  /* min-width:2000px; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill{
+
+  -webkit-background-clip: text;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea { resize: vertical; }
+
+pre{
+  font-family: var(--font-family);
+  word-break: break-word;
+  white-space: break-spaces;
+}
+
+input[type='file']{
+  cursor:pointer;
+  font-size: 0;
+}
+
+/* ::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0b1322;
+  border-radius: 10px;
+  border: 1px solid #ffffff36;
+} */
+.ck-editor{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+.ck-toolbar{
+  background: red !important;
+  background: #F7F8F9 !important;
+  border: 1px solid #E9ECF0 !important;
+  border-bottom:0 !important;
+  border-radius: 4px 4px 0 0 !important;
+  height:52px !important;
+  padding: 0 8px !important;
+}
+.ck-editor__main{
+  flex:1;
+}
+.ck-editor__editable{
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #E9ECF0 !important;
+  border-top:0 !important;
+  border-bottom:0 !important;
+  box-shadow:none !important;
+  padding: 0 16px;
+  
+  border-radius: 0 0 4px 4px !important;
+}
+canvas{
+  width:100%;
+}

@@ -1,0 +1,81 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      // "~pages/*": [
+      //   "src/pages/*.tsx"
+      // ],
+      // "~features/*": [
+      //   "src/features/*.tsx"
+      // ],
+      // "~partials/*": [
+      //   "src/partials/*.tsx"
+      // ],
+      // "~guards/*": [
+      //   "src/guards/*.tsx"
+      // ],
+      // "~models/*": [
+      //   "src/models/*.ts"
+      // ],
+      // "~dto/*": [
+      //   "src/dto/*.ts"
+      // ],
+      "~store": [
+        "src/store/index.ts"
+      ],
+      "~store/*": [
+        "src/store/*"
+      ],
+      "~utils": [
+        "src/utils/index.ts"
+      ],
+      "~utils/*": [
+        "src/utils/*"
+      ],
+      "~hooks": [
+        "src/hooks/index.ts"
+      ],
+      "~css/*": [
+        "src/css/*.css"
+      ],
+      "~svg/*": [
+        "src/svg/*.tsx"
+      ],
+      "~breakpoints": [
+        "src/css/breakpoints.ts"
+      ],
+      "~styled": [
+        "src/css/styled.ts"
+      ],
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "node_modules/sezy-degsign/**/*.ts",
+    "node_modules/sezy-degsign/**/*.tss"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+}
